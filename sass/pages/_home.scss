@@ -1,0 +1,748 @@
+.admin-bar .banner-image-cover{
+    height: 23rem;
+    width:100%;
+    position:absolute;
+    top:7.25rem;
+    background-image: linear-gradient( #00152cdd 5%, #002a2b87 40%  ,#001426 100% );
+    z-index:5;
+    transition: ease-in-out;
+    transition-duration: 1300ms;
+    @media only screen and (min-width: 500px) {
+        top:7.6rem;
+    }
+    @media only screen and (min-width: 700px) {
+        top:8.4rem;
+    }
+    @media only screen and (min-width: 700px) {
+        top:7.5rem;
+    }
+    @media only screen and (min-width: 750px) {
+        height: 30rem;
+    }
+    @media only screen and (min-width: 950px) {
+        height: 35rem;
+    }
+    @media only screen and (min-width: 1800px) {
+        width:1800px;
+    }
+}
+.footer-image-title{
+    position:absolute;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.817);
+    left: auto;
+    right: auto;
+    top: -19px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    @media only screen and (min-width: 550px) {
+        font-size:1.25rem;
+    }
+    @media only screen and (min-width: 750px) {
+        font-size:1.5rem;
+        top: -24px;
+    }
+
+}
+.banner-image-cover{
+    height: 23rem;
+    width:100%;
+    position:absolute;
+    top:5.67rem;
+    background-image: linear-gradient( #00152cdd 5%, #002a2b87 40%  ,#001426 100% );
+    z-index:5;
+    transition: ease-in-out;
+    transition-duration:  2300ms;
+    @media only screen and (min-width: 700px) {
+        top:5.5rem;
+    }
+    @media only screen and (min-width: 750px) {
+        height: 30rem;
+        top:5.7rem;
+    }
+    @media only screen and (min-width: 950px) {
+        height: 35rem;
+    }
+    @media only screen and (min-width: 1800px) {
+        width:1800px;
+    }
+    &:hover, &:focus{
+        transition: ease;
+        transition-duration: 2300ms;
+        -webkit-animation: fadeOut 2.3s;
+        -moz-animation: fadeOut 2.3s;
+        -o-animation: fadeOut 2.3s;
+        animation: fadeOut 2.3s;
+        opacity:0.4;
+        @-webkit-keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            35% {
+                opacity:0.9; 
+            }
+            100% {
+                opacity:0.8;
+            }
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity:1;
+            }
+            35% {
+                opacity:0.9; 
+            }
+            100% {
+                opacity:0.8;
+            }
+        }
+
+    }
+    &:hover  ~ a.order-online, &:focus ~ a.order-online,  &:hover ~ a.reserve-table, &:focus ~ a.reserve-table{
+        transition: ease-in-out;
+        transition-duration:switchColors3  1800ms;
+        -webkit-animation:switchColors3  1.8s;
+        -moz-animation: switchColors3 1.8s;
+        -o-animation:switchColors3  1.8s;
+        animation: switchColors3  1.8s;
+        color:rgb(230, 151, 90);
+        @-webkit-keyframes switchColors3 {
+            0% {
+                color: rgb(255, 89, 0);   
+            }
+            35% {
+
+                color:rgb(254, 195, 95);                          
+            }
+            100% {
+                color:rgb(230, 151, 90);                   
+            }
+        }
+        
+        @keyframes switchColors3 {
+            0% {
+                color: rgb(255, 89, 0);   
+            }
+            35% {
+
+                color:rgb(254, 195, 95);                             
+            }
+            100% {
+                color:rgb(230, 151, 90);                   
+            }
+        }
+    }
+
+}
+.banner-image{
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+    object-position: 30% 60%;
+    @media only screen and (min-width: 750px) {
+        height: 30rem;
+        object-position: 30% 70%;
+    }
+    @media only screen and (min-width: 950px) {
+        height: 35rem;
+    }
+}
+
+
+a.order-online,a.reserve-table, .banner-cta.a ,.footer-cta{
+    transition: ease-in-out;
+    transition-duration: 1300ms;
+    display:inline-block;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+    padding: 5px 30px 5px 30px;
+    border: 2px solid rgb(176, 91, 0);
+    background-color: #001426c0;
+    font-size: 1.25rem;    
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin:5px auto;
+    top:-65px;
+    z-index:6;
+
+    &:hover,&:active,&:focus{ 
+        color:rgb(230, 151, 90);
+        border: 2px solid rgb(97, 0, 42);
+        background-color: rgba(36, 0, 26, 0.9);
+        transition: ease-in-out;
+        transition-duration: 2000ms;
+    }
+    @media only screen and (min-width: 370px) {
+        margin: 0 auto;
+
+    }
+
+}
+@media only screen and (min-width: 500px) {
+    a.reserve-table{
+        position:relative;
+        top:-75px;
+        right:20px
+    }
+    a.order-online{
+        position:relative;
+        top:-75px;
+        left:20px;
+    }
+
+}
+
+main.site-main div.banner-cta{
+    position: relative;
+    top:-6rem;
+        p {
+        background-color: rgba(0, 0, 0, 0.597);
+        color:white;
+        border-radius: 15px;
+        margin: auto;
+        @media only screen and (min-width: 450px) {
+            max-width:450px;
+        }
+        border: 1px solid orange;
+        &:hover, &:focus, &:active{
+            border: 1px solid orange;
+        }
+
+    }
+}
+.about-us-image-and-text,
+.our-loactions,
+.popular-dishes,
+.instagram-container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.our-loactions h2{
+    width:100%;
+}
+.about-us-image-and-text,
+.our-loactions{
+    border-top: 1px solid rgb(216, 178, 97);
+	border-bottom: 2px solid rgb(242, 165, 0);
+	border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(174, 174, 174, 0.25);
+
+    @media only screen and (max-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (min-width: 801px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        h2{
+            grid-column-end: span 2;
+        }
+    }
+    .baout-us-image,
+    .location-mage{
+        height: 250px;
+        width:auto;
+        object-fit: cover;
+        object-position: 90% 40%;
+        border-top: 2px solid rgb(242, 165, 0);
+        border-radius: 15px;
+        @media only screen and (min-width: 550px) {
+            height: 300px;
+        }
+        @media only screen and (min-width: 750px) {
+            height: 350px;
+            margin-bottom:10px;
+        }
+    }
+    .about-us-text{
+        padding: 0 20px;
+        max-width:480px;
+        margin:10px auto;
+        @media only screen and (min-width: 800px) {
+            margin-top: 30px;
+        }
+
+    }
+    .location-address,.hours-div{
+        position: relative;
+        top:-62px;
+        background-color: rgba(0, 0, 0, 0.817);
+        color:white;
+        max-width: 350px;
+        margin:auto;
+    }
+    .location-address{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .hours-div{
+        padding: 15px 0 5px 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+.about-us-image-and-text{
+    padding-bottom: 10px;
+}
+.popular-dishes{
+    display: grid;
+    @media only screen and (max-width: 699px) {
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        .popular-dishes-heading{
+            grid-column: 1 / span 2;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        .popular-dishes-heading{
+            grid-column: 1 / span 3;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .popular-dishes-heading{
+            grid-column: 1 / span 4;
+        }
+    }
+    .from, del{
+        display: none;
+    }
+    .image-container{
+        height:400px;
+        max-width: 350px;
+        background-color: #0014269c;
+        transition: ease;
+        transition-duration: 2000ms;
+        &:hover, &:focus{
+            background-color: #001426e9;
+            transition: ease;
+            transition-duration: 2000ms;
+            h3{
+                color:white;
+                background-color: rgba(0, 0, 0, 0.85);
+            }
+        }
+    }
+    .image-container,.cta-banner{
+        border-radius: 15px;
+        border:1px solid orange;
+        margin:10px auto;
+        @media only screen and (min-width: 600px) {
+            margin:10px;
+        }
+
+        mark, bdi {
+            border: 2px solid grey;
+        }
+        h3{
+            transition: ease;
+            transition-duration: 2000ms;
+            position:relative;
+            top:-69px;
+            color:white;
+            background-color: rgba(0, 0, 0, 0.598);
+            height:45px;
+            border-radius: 15px;
+            line-height: 45px;
+        }
+        &:hover, &:focus{
+            mark, bdi{
+                color:rgb(230, 151, 90);
+                border: 2px solid rgb(216, 178, 97);
+                transition: ease-in-out;
+                transition-duration: 1300ms;
+                -webkit-animation: switchColors2 1.3s;
+                -moz-animation: switchColors2 1.3s;
+                -o-animation: switchColors2 1.3s;
+                animation: switchColors2 1.3s;
+                @-webkit-keyframes switchColors2 {
+                    0% {
+                        color:rgb(255, 242, 190);
+                        border: 2px solid rgb(216, 178, 97);
+                    }
+                    35% {
+                        color: rgb(216, 178, 97);
+                          border: 2px solid rgb(134, 77, 2);
+                    }
+                    100% {
+                        color:rgb(230, 151, 90);
+                        border: 2px solid rgb(216, 178, 97);
+                    }
+                }
+                
+                @keyframes switchColors2 {
+                    0% {
+                        color:rgb(255, 242, 190);
+                          border: 2px solid rgb(216, 178, 97);
+                    }
+                    35% {
+                        color: rgb(216, 178, 97);
+                        border: 2px solid rgb(134, 77, 2);
+                    }
+                    100% {
+                        color:rgb(230, 151, 90);
+                        border: 2px solid rgb(216, 178, 97);
+                    }
+                }
+            }
+            a.button{
+                transition: ease-in-out;
+                transition-duration:switchColors3  1800ms;
+                -webkit-animation:switchColors3  1.8s;
+                -moz-animation: switchColors3 1.8s;
+                -o-animation:switchColors3  1.8s;
+                animation: switchColors3  1.8s;
+                color:rgb(230, 151, 90);
+                @-webkit-keyframes switchColors3 {
+                    0% {
+                        color: rgb(255, 89, 0);   
+                    }
+                    35% {
+        
+
+                        color:rgb(254, 195, 95);                            
+                    }
+                    100% {
+                        color:rgb(230, 151, 90);                   
+                    }
+                }
+                
+                @keyframes switchColors3 {
+                    0% {
+                        color: rgb(255, 89, 0);   
+                    }
+                    35% {
+   
+                        color:rgb(254, 195, 95);                           
+                    }
+                    100% {
+                        color:rgb(230, 151, 90);                   
+                    }
+                }
+            }
+        }        
+       img{
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+        }
+    }
+    mark, bdi{
+        background-color: rgba(0, 0, 0, 0.801);
+        margin-right: 5px;
+        border-radius: 50px;
+        padding:20px 5px;
+        position:relative;
+        top:-180px;
+        z-index: 100;
+        color: rgb(255, 136, 0);
+    }
+    ins{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+        border: none;
+        z-index: 1;
+    }
+    span.woocommerce-Price-amount.amount{
+        text-decoration: none;
+    }
+
+    .add-to-cart{
+        a{
+            border-radius: 15px;
+            margin: 0 auto 20px auto;
+            padding: 10px 50px 10px 50px;
+            border: 1px solid orange;
+            background-color: rgba(0, 0, 0, 0.80);
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top:-50px;
+            left:-40px;
+            &:hover,&:active,&:focus{ color:orange; }
+        }
+       
+
+    }
+   
+}
+.our-loactions{
+    .location-img-hours{
+        .location-mage{
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            object-position: 35% 40%;
+        }
+        .hours-div{
+            transition: ease-in-out;
+            transition-duration: 1000ms;
+        }
+        &:hover, &:focus { 
+            .hours-div{
+                transition-duration: .5;
+                transition: ease-in-out;
+                color:orange;
+                background-color: black;
+            }
+        }
+    }
+}
+.footer-cta{
+        position: relative;
+        top:-25px;
+        border-radius: 15px;
+        border:1px solid orange;  
+        margin:10px auto;
+        background-color: black;
+        color:orange;
+        a{
+            text-decoration: none;
+            color:orange
+        }
+    .from, del{
+        display: none;
+    }
+    .woocommerce-Price-amount.amount{
+        background-color: rgba(0, 0, 0, 0.801);
+        margin-left: 5px;
+        border-radius: 50px;
+        padding:20px 5px;
+        position:sticky;
+        top:-5rem;
+        left:-50rem;
+        left:0;
+        bottom:0;
+        z-index: 100;
+        color: rgb(255, 136, 0);
+    }
+    ins{
+        background-color: transparent;
+        position: relative;
+        bottom:70px;
+        right:30vw;
+        padding-left: 3%;
+    }
+    a{
+        position: absolute;
+        left: 28%;
+    }
+}
+.footer-banner{
+    position: relative;
+    height:320px;
+    margin:20px auto;
+    .footer-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 35% 70%;
+    }
+    @media only screen and (min-width: 550px) {
+        margin: 25px auto 65px auto;;
+        height: 300px;
+        .footer-image{
+            height: 330px;
+        }
+    }
+    @media only screen and (min-width: 650px) {
+        height: 450px;
+        margin: 25px auto 10px auto;;
+        .footer-image{
+            height: 430px;
+        }
+    }
+    .footer-cta{
+       width:80%;
+       padding: 5px 10px;
+       position: relative;
+       top:-60px;
+       background-color: #001426c0;
+       font-size: 1.25rem;
+       border: none;
+       @media only screen and (min-width: 400px) {
+            width:300px;
+        }
+    } 
+
+    &:hover,&:focus, &:active{
+        .woocommerce-Price-amount.amount{
+            color:rgb(230, 151, 90);
+            border: 2px solid rgb(216, 178, 97);
+            transition: ease-in-out;
+            transition-duration: 1300ms;
+            -webkit-animation: fadeIn 1.3s;
+            -moz-animation: fadeIn 1.3s;
+            -o-animation: fadeIn 1.3s;
+            animation: fadeIn 1.3s;
+            @-webkit-keyframes fadeIn {
+                0% {
+                    color:rgb(255, 242, 190);
+                    border: 2px solid rgb(216, 178, 97);
+                }
+                35% {
+                    color: rgb(216, 178, 97);
+                      border: 2px solid rgb(134, 77, 2);
+                }
+                100% {
+                    color:rgb(230, 151, 90);
+                    border: 2px solid rgb(216, 178, 97);
+                }
+            }
+            @keyframes fadeIn {
+                0% {
+                    color:rgb(255, 242, 190);
+                      border: 2px solid rgb(216, 178, 97);
+                }
+                35% {
+                    color: rgb(216, 178, 97);
+                    border: 2px solid rgb(134, 77, 2);
+                }
+                100% {
+                    color:rgb(230, 151, 90);
+                    border: 2px solid rgb(216, 178, 97);
+                }
+            }
+        }
+        .footer-cta{
+            transition: ease;
+            transition-duration:switchColors3  1800ms;
+            -webkit-animation:switchColors3  1.8s;
+            -moz-animation: switchColors3 1.8s;
+            -o-animation:switchColors3  1.8s;
+            animation: switchColors3  1.8s;
+            color:rgb(230, 151, 90);
+            background-color: #000d18eb;   
+            border-top: 1px solid rgba(255, 166, 0, 0.817) ;
+            border-bottom: 1px solid rgba(255, 166, 0, 0.803) ;     
+            @-webkit-keyframes switchColors3 {
+                0% {
+                    color:rgb(213, 107, 26);   
+                    background-color: #001426c0; 
+                }
+                35% {
+    
+                    color:rgb(254, 195, 95); 
+                    background-color: #000c17d9;   
+                                          
+                }
+                100% {
+                    color:rgb(230, 151, 90); 
+                    background-color: #000d18eb;       
+                }
+            }
+            
+            @keyframes switchColors3 {
+                0% {
+                    color:rgb(213, 107, 26);    
+                    background-color: #001426c0;  
+                }
+                35% {
+    
+                    color:rgb(254, 195, 95);   
+                    background-color: #000c17d9;                         
+                }
+                100% {
+                    color:rgb(230, 151, 90);    
+                    background-color: #000d18eb;                   
+                }
+            }
+        }
+    }
+    .footer-banner-cover{
+        height:300px;
+        width:100%;
+        background-image: linear-gradient(to right, rgba(215, 100, 0, 0.303),rgba(255, 206, 116, 0.249), rgba(255, 0, 0, 0.146));
+        position: absolute;
+        bottom:20px;
+        right:auto;
+        left:auto;
+        transition: ease;
+        transition-duration: 1800ms;
+        @media only screen and (min-width: 550px) {
+            height: 330px;
+            bottom:-30px;
+        }
+        @media only screen and (min-width: 650px) {
+            height: 430px;
+            bottom:20px;
+        }
+        &:hover, &:focus{
+            transition: ease;
+            transition-duration: 1800ms;
+            -webkit-animation: fadeOut 1.8s;
+            -moz-animation: fadeOut 1.8s;
+            -o-animation: fadeOut 1.8s;
+            animation: fadeOut 1.8s;
+            opacity:0.42;
+            @-webkit-keyframes fadeOut {
+                0% {
+                    opacity:1;
+                }
+                50% {
+                    opacity:0.6; 
+                }
+                100% {
+                    opacity:0.4;
+                }
+            }
+            
+            @keyframes fadeOut {
+                0% {
+                    opacity:1;
+                }
+                50% {
+                    opacity:0.6; 
+                }
+                100% {
+                    opacity:0.4;
+                }
+            }
+    
+        }
+        &:hover  ~ .footer-cta, &:focus ~  .footer-cta{
+            transition: ease;
+            transition-duration:switchColors3  1800ms;
+            -webkit-animation:switchColors3  1.8s;
+            -moz-animation: switchColors3 1.8s;
+            -o-animation:switchColors3  1.8s;
+            animation: switchColors3  1.8s;
+            color:rgb(230, 151, 90);
+            @-webkit-keyframes switchColors3 {
+                0% {
+                    color: rgb(255, 89, 0);   
+                }
+                35% {
+    
+                    color:rgb(254, 195, 95);                          
+                }
+                100% {
+                    color:rgb(230, 151, 90);                   
+                }
+            }
+            
+            @keyframes switchColors3 {
+                0% {
+                    color: rgb(255, 89, 0);   
+                }
+                35% {
+    
+                    color:rgb(254, 195, 95);                             
+                }
+                100% {
+                    color:rgb(230, 151, 90);                   
+                }
+            }
+        }
+    }
+}

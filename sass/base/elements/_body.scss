@@ -1,0 +1,54 @@
+.site-logo{
+	transform: scale(2.7);
+	margin:10px auto 0px 10px;
+	.cls-1{fill:none;}
+	.cls-2{clip-path:url(#clip-path);}
+	.cls-3{fill:#cb7a00;}
+	.cls-4{clip-path:url(#clip-path-2);}
+	.cls-5{fill:#828800;}
+	.cls-6{fill:#dc6700;}
+	@media only screen and (min-width: 800px) {
+		transform: scale(3.5);
+	}
+	&:hover, &:focus{
+		transform: scale(2.9);
+		.cls-1{fill:none;}
+		.cls-2{clip-path:url(#clip-path);}
+		.cls-3{fill:#d68813;}
+		.cls-4{clip-path:url(#clip-path-2);}
+		.cls-5{fill:#9ea50b;}
+		.cls-6{fill:#e87b1d;}
+	}
+}
+.site-header{
+	height:91px;
+
+}
+body {
+	margin:auto;
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+
+	//This helps pushing the footer to the bottom of the page 
+	//if there isn't enough content to fill ot
+	//Add footer{ margin-top: auto;}
+	.site{
+		margin:auto;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		max-width: 1800px;
+	}
+	margin:auto;
+	.site-main{
+		text-align: center;
+		section{
+			img, table{
+				margin:auto;
+			}
+		}
+	}
+	.widget-area{
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,223 @@
+body.archive {
+  //   //   position: relative;
+  //   display: block;
+  //   height: auto;
+  //   footer {
+  //     clear: both;
+  //   }
+  .filter-button {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 3px 10px;
+    &:hover,
+    &:focus {
+      transition: ease-in-out;
+      transition-duration: switchColors3 1800ms;
+      -webkit-animation: switchColors3 1.8s;
+      -moz-animation: switchColors3 1.8s;
+      -o-animation: switchColors3 1.8s;
+      animation: switchColors3 1.8s;
+      color: rgb(230, 151, 90);
+      cursor: pointer;
+      @-webkit-keyframes switchColors3 {
+        0% {
+          color: rgb(255, 89, 0);
+        }
+        35% {
+          color: rgb(254, 195, 95);
+        }
+        100% {
+          color: rgb(230, 151, 90);
+        }
+      }
+      @keyframes switchColors3 {
+        0% {
+          color: rgb(255, 89, 0);
+        }
+        35% {
+          color: rgb(254, 195, 95);
+        }
+        100% {
+          color: rgb(230, 151, 90);
+        }
+      }
+    }
+  }
+  ul.products {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100% !important;
+    li.product {
+      border-radius: 15px;
+      min-width: 280px;
+      min-height: 400px;
+      background-color: #f0eaea;
+      margin: 20px 30px;
+      &:hover,
+      &:focus {
+        mark,
+        bdi {
+          color: rgb(230, 151, 90);
+          border: 2px solid rgb(216, 178, 97);
+          transition: ease-in-out;
+          transition-duration: 1300ms;
+          -webkit-animation: switchColors2 1.3s;
+          -moz-animation: switchColors2 1.3s;
+          -o-animation: switchColors2 1.3s;
+          animation: switchColors2 1.3s;
+          @-webkit-keyframes switchColors2 {
+            0% {
+              color: rgb(255, 242, 190);
+              border: 2px solid rgb(216, 178, 97);
+            }
+            35% {
+              color: rgb(216, 178, 97);
+              border: 2px solid rgb(134, 77, 2);
+            }
+            100% {
+              color: rgb(230, 151, 90);
+              border: 2px solid rgb(216, 178, 97);
+            }
+          }
+
+          @keyframes switchColors2 {
+            0% {
+              color: rgb(255, 242, 190);
+              border: 2px solid rgb(216, 178, 97);
+            }
+            35% {
+              color: rgb(216, 178, 97);
+              border: 2px solid rgb(134, 77, 2);
+            }
+            100% {
+              color: rgb(230, 151, 90);
+              border: 2px solid rgb(216, 178, 97);
+            }
+          }
+        }
+        a.button {
+          transition: ease-in-out;
+          transition-duration: switchColors3 1800ms;
+          -webkit-animation: switchColors3 1.8s;
+          -moz-animation: switchColors3 1.8s;
+          -o-animation: switchColors3 1.8s;
+          animation: switchColors3 1.8s;
+          color: rgb(230, 151, 90);
+          @-webkit-keyframes switchColors3 {
+            0% {
+              color: rgb(255, 89, 0);
+            }
+            35% {
+              color: rgb(254, 195, 95);
+            }
+            100% {
+              color: rgb(230, 151, 90);
+            }
+          }
+
+          @keyframes switchColors3 {
+            0% {
+              color: rgb(255, 89, 0);
+            }
+            35% {
+              color: rgb(254, 195, 95);
+            }
+            100% {
+              color: rgb(230, 151, 90);
+            }
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        img {
+          margin: 10px auto 0 auto;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+      .from,
+      del {
+        display: none;
+      }
+      .woocommerce-Price-amount.amount,
+      .button {
+        // background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.85);
+        border: 1px solid orange;
+        margin: 12px 12px;
+        border-radius: 10px;
+        padding: 5px 15px;
+        bottom: 0;
+        z-index: 100;
+        color: white;
+      }
+      ins {
+        background-color: transparent;
+        //position: relative;
+        bottom: 70px;
+        right: 30vw;
+        padding-left: 3%;
+      }
+      h2 {
+        // text-decoration: none;
+        // border-top: 1px solid rgb(114, 78, 11);
+        // border-bottom: 1px solid rgb(114, 78, 11);
+        // border-radius: 10px;
+
+        transition: ease;
+        transition-duration: 2000ms;
+        // position:relative;
+        // top:-69px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.598);
+        height: 45px;
+        border-radius: 15px;
+        line-height: 45px;
+      }
+      // .add_to_cart_button{
+      //     padding:5px 30px;
+      //     color: rgb(235, 120, 120);
+      // }
+      // .yith-wcqv-button{
+      //     padding:5px 30px;
+      //     color: rgb(238, 149, 252);
+      // }
+    }
+  }
+}
+
+.woocommerce-breadcrumb,
+.woocommerce-result-count,
+.orderby {
+  display: none;
+}
+
+body.single-product {
+  div.product div.woocommerce-product-gallery img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+    @media only screen and (min-width: 940px) {
+      margin: 0 10%;
+    }
+    @media only screen and (min-width: 1180px) {
+      margin: 0 20%;
+    }
+  }
+  div.product
+    .woocommerce-product-gallery
+    .woocommerce-product-gallery__trigger {
+    display: none;
+  }
+}

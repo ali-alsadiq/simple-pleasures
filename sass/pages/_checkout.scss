@@ -1,0 +1,89 @@
+body.page-id-14  .post-14  div.woocommerce{
+
+    .checkout.woocommerce-checkout,
+    .woocommerce-shipping-fields{
+        max-width:1200px;
+        margin: 10px auto;        
+        padding: 10px 15px;
+        border-radius: 15px;
+        .woocommerce-billing-fields,
+        .shipping_address{
+            margin:auto;
+            h3{
+                background-color: rgba(0, 0, 0, 0.612);
+                color:rgb(228, 118, 0);
+                height: 35px;
+                max-width: 320px;
+                margin:auto;
+                border-radius: 5px;
+            }
+            fieldset{
+                border: 1px solid darkred;
+                margin-top: 5px;
+            }
+            input,
+            .select2-selection{
+                border-radius: 10px;
+                border: 1px solid darkred;
+                margin-left: 5px;
+                display: block;
+                width:90%;
+                margin:auto;
+       
+            }
+            .select2-selection{
+                height:35px;
+            }
+            .select2-selection__arrow{
+                position:relative;
+                right:-47%;
+                top:-10%;
+
+            }
+            label{
+                position: relative;
+                right: -3vw;
+                text-align: start;
+                display: block;
+            }
+            @media only screen and (min-width: 768px) {
+                #billing_first_name, #billing_last_name{
+                    width:79%;
+                }
+                #shipping_first_name_field span, #shipping_last_name_field span{
+                    width:59%
+                }
+            }
+        }
+        textarea{
+            display:block;
+            width:90%;
+            margin:auto;
+            border-radius: 10px;
+            border: 1px solid darkred;
+        }
+        table{
+            text-align: start;
+            width:90%;
+            margin:auto;
+            border-radius: 10px;
+            border: 1px solid darkred;
+            padding:5px;
+            bdi{
+                float:right;
+                margin-right:5px;
+            }
+
+        }
+   }
+   .szbdshortcode_id{
+       display: none;
+   }
+
+    #payment, .col-2, .form-row-wide{
+        max-width: 650px;
+        margin:10px auto;
+        padding: 20px;
+    }
+
+}

@@ -1,0 +1,111 @@
+//page-id-14 & .post-id-14 = checkout & order_recieved
+body.page-template-default.page.page-id-15,
+body.page-id-14,
+.postid-246,
+.postid-248,
+.postid-314{
+    background-image:linear-gradient( #3f3f3f43 0%, #5555551d 40%  ,#21212131 100% );
+    .woocommerce-info{background-color: transparent;}
+   .post-15,
+   .product,
+   .post-248,
+   .post-314{
+        max-width:700px;
+        margin: 20px auto;        
+        padding: 20px 15px;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;      
+        border-radius: 35px;
+        div.woocommerce{
+            a{
+                color:black;    
+                text-decoration: none;
+            }
+            h2{
+                background-color: rgba(85, 85, 85, 0.249);
+                color:rgb(0, 17, 114);
+                height:50px;
+                width:80%;
+                margin: 0 auto;
+                line-height: 50px;
+                border-radius: 5px;
+            }
+            form{
+                border-top: 1px solid rgb(61, 0, 104);
+                border-bottom: 1px solid rgb(106, 0, 152);      
+                border-radius: 10px;
+                width:100%;
+                margin:10px auto;
+            }
+            form.woocommerce-form.woocommerce-form-login.login{
+                height:300px;
+            }
+            .woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox{
+                @media only screen and (min-width: 600px) {
+                    display: flex;
+                    input{
+                        position: absolute;
+                    }
+                }
+                
+            }
+            input{
+                border-radius: 10px;
+                border: 1px solid rgb(0, 29, 60);
+                margin-left: 5px;
+                width:90%;
+                margin:auto;
+            }
+            label{
+                margin-left: 7px;
+                margin-bottom: 2px;
+            }
+            #rememberme{
+                position: relative;
+                left:80px;
+                top:20px;
+            }
+            button.woocommerce-form-login__submit{
+                float:right;
+                margin-right: 10px;
+              
+            }
+            button, li{
+                border:none;
+                border-top: 1px solid orange;
+                border-bottom: 1px solid orange;      
+                border-radius: 10px;
+                padding: 7px 20px;
+                background-color: rgba(55, 55, 55, 0.249);
+                font-size:1rem;
+                font-size:20px;
+                line-height:25px;
+                margin-top: 10px;
+            }
+        }
+        .woocommerce-MyAccount-navigation ul{
+            list-style: none;
+            text-align: start;
+            max-width:550px;
+            margin: 10px auto;
+            li{
+                margin-bottom: 10px;
+                position: relative;
+                left:-20px;
+            }
+        }
+        button, .woocommerce-MyAccount-navigation ul li{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        button.woocommerce-button{
+            background-color: rgba(96, 144, 202, 0.48);
+        }
+    }   
+}
+ul, li{
+    list-style: none;
+    background-color: transparent;
+    margin: 0 auto;
+}
